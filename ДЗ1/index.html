@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            margin-top: 25px;
+            margin-bottom: 75px;
+        }
+
+        .block1 {
+        width: 406px;
+        height: 400px;
+        position: relative;
+        border: 1px solid black;
+        }
+
+        .block2 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="idInput">ИНН</label>
+        <input type="text" class="idInput" placeholder="0,1,*************">
+        <button class="idBtn">check</button>
+        <span class="idResult"></span>
+
+    </div>
+    <div class="block1">
+        <div class="block2"></div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
